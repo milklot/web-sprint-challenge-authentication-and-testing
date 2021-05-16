@@ -5,7 +5,7 @@ function getUserById(id) {
   return db('users')
   .where({id})
   .first()
-}
+} 
 
 function getUserByUsername(username) {
   return db('users')

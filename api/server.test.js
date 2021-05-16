@@ -47,7 +47,6 @@ describe('server', () => {
         });
         it('creates user', async () => {
           const res = await request(server).post("/api/auth/register").send(testUser);
-
           expect(res.statusCode).toBe(500);
         });
     });
@@ -59,4 +58,4 @@ describe('server', () => {
             expect(res.status).toBe(401)
         })
     });
-});
+});  
